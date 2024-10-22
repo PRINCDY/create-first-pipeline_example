@@ -12,7 +12,7 @@ strategy:
   maxParallel: 2
 
 pool:
-  vmImage: $(imageName)
+  vmImage:
 
 steps:
 - task: Maven@4
