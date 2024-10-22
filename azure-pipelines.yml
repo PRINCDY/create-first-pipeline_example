@@ -53,10 +53,3 @@ steps:
   inputs:
     command: 'build'
   
-- task: Ant@1
-  inputs:
-      buildFile: 'build.xml'
-      options: 
-      publishJUnitResults: true
-      testResultsFiles: '**/TEST-*.xml'
-      javaHomeOption: 'JDKVersion'
