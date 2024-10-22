@@ -16,3 +16,11 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
+
+- task: NuGetToolInstaller@1
+  inputs:
+        versionSpec: 
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
